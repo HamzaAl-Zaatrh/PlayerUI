@@ -4,9 +4,7 @@
 
 - You can run and view the application directly from this URL:
 
-```
 https://hamzaal-zaatrh.github.io/PlayerUI/
-```
 
 ### 1. Clone the Repository:
 
