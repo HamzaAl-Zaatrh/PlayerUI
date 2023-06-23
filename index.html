@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player</title>
+
+    <!-- Main Template css File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google font [Inter] -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="player">
+      <button id="rewind" class="active visibility">
+        <img src="assets/images/rewind.svg" alt="rewind button" />
+      </button>
+
+      <button id="play" class="play-pause active">
+        <img src="assets/images/play.svg" alt="play button" />
+      </button>
+
+      <button id="pause" class="play-pause">
+        <img src="assets/images/pause.svg" alt="pause button" />
+      </button>
+
+      <button id="forward" class="active visibility">
+        <img src="assets/images/forward.svg" alt="forward button" />
+      </button>
+
+      <div id="time">
+        <span id="time-current">0:00</span>
+        <span id="time-separator">/</span>
+        <span id="time-duration">2:10</span>
+      </div>
+
+      <!-- We set the max attribute to 130 so the thumb gets to the end of the slider when the audio ends [2:10] => 130 seconds -->
+      <input
+        type="range"
+        id="progress-bar"
+        class="visibility"
+        max="130"
+        value="0"
+        step="1"
+      />
+
+      <button id="sound-high" class="sound active visibility">
+        <img src="assets/images/volume-high.svg" alt="sound-high button" />
+      </button>
+      <button id="sound-mute" class="sound visibility">
+        <img src="assets/images/volume-cross.svg" alt="sound-mute button" />
+      </button>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
