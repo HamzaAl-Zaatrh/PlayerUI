@@ -41,6 +41,7 @@ button {
 }
 
 button:hover {
+  /* To add some animation */
   transform: scale(0.95);
 }
 
@@ -54,6 +55,7 @@ button:hover {
   margin: 0px;
 }
 
+/* To make the PlayerUI application responsive and adapt to different screen sizes */
 @media (max-width: 380px) {
   .visibility {
     display: none;
